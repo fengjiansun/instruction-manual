@@ -1,0 +1,131 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 100%;
+  padding: 48px 64px 24px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer-brand {
+  max-width: 280px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer-logo svg {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-logo span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.footer-contact {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 64px;
+}
+
+.footer-section h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section a {
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-section a:hover {
+  color: var(--accent-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-legal a {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer-legal a:hover {
+  color: var(--text-secondary);
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 32px 20px 16px;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .footer-links {
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
