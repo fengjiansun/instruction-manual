@@ -54,6 +54,13 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+  /* 优化SVG渲染，特别是在Safari中 */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  /* 确保SVG保持原始比例和清晰度 */
+  max-width: 100%;
+  display: block;
 }
 
 .task-content {
