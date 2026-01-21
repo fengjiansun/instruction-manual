@@ -9,6 +9,9 @@ import aiEvaluationIcon from '../assets/images/ai-evaluation-CQJ7eoxG.svg'
 import apiTestIcon from '../assets/images/api-test-DhJ5RGiK.svg'
 import errorTrackingIcon from '../assets/images/error-tracking-XsxXNuMN.svg'
 
+// 导入SVG组件
+import { CodeFixIcon } from '../components/SvgIcons'
+
 const tasks = [
   {
     icon: codeFixIcon,
@@ -61,7 +64,11 @@ export default function AnnotationTasks() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="task-icon-wrapper">
-                <img src={task.icon} alt={task.title} className="task-icon" />
+                {index === 0 ? (
+                  <CodeFixIcon />
+                ) : (
+                  <img src={task.icon} alt={task.title} className="task-icon" />
+                )}
               </div>
               <div className="task-content">
                 <h3 className="task-title">{task.title}</h3>
